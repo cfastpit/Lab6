@@ -1,5 +1,6 @@
 public class Month {
-int monthNumber;   
+int monthNumber; 
+String monthName;
 
     public Month() {
         this.monthNumber = 1;
