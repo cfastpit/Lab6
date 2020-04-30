@@ -16,15 +16,19 @@ public class Main {
         System.out.println("Please enter land 2 length");
         double land2length = keyboard.nextDouble();
         System.out.println("Please enter land 2 width");
+
         double land2width = keyboard.nextDouble();
         LandTract land1 = new LandTract(land1name, land1length, land1width);
         LandTract land2 = new LandTract(land2name, land2length, land2width);
+        
         System.out.println(land1name + "Area is " + land1.getArea());
         System.out.println(land1name + "Area is " + land2.getArea());
-        if (land1.getArea() == land2.getArea()) {
-            System.out.println(land1name + " and " + land2name + " is equal");
+        
+        
+         if (land1.equals(land2)) {
+            System.out.println(land1name+" and "+land2name+" are equal");
         } else {
-            System.out.println(land1name + " and " + land2name + " is not equal");
+            System.out.println(land1name+" and "+land2name+" are not equal");
         }
         System.out.println(land1.toString());
         System.out.println(land2);

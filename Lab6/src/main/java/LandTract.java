@@ -42,9 +42,22 @@ public class LandTract {
     @Override
     public String toString() {
         return "LandTract{"+"name= "+name +",length=" + length + ", width=" + width+ " area=" + area + '}';
+    
     }
 
-    
+    @Override
+    public boolean equals(Object obj) {
+       
+        LandTract incomingland = (LandTract)obj;
+        
+        if (incomingland.getArea() == this.getArea())
+        {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
    
 
     
